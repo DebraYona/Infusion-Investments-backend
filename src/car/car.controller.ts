@@ -46,15 +46,4 @@ export class CarController {
       });
     }
 
-
-    @Get('/analytics')
-    async getAnalitics(@Res() res) {
-      const cars = await this.carService.googleAnalitics();
-      return res.status(HttpStatus.OK).json({
-        success: true,
-        message: ' Lista recuperada satisfactoriamente ',
-        code: 200,
-        data: cars,
-      });
-    }
 }
