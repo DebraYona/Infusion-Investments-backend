@@ -50,23 +50,7 @@ export class CarService {
         
     }
 
-    async googleAnalitics(){
 
-        const scopes = 'https://www.googleapis.com/auth/analytics.readonly';
-        const jwt = new google.auth.JWT(this.configService.get<string>('CLIENT_EMAIL'), null, this.configService.get<string>('PRIVATE_KEY').replace(/\\n/gm, '\n'), scopes);
-        const view_id = this.configService.get<string>('VIEWID')
-        const response = await jwt.authorize()
-        const result = await google.analytics('v3').data.ga.get({
-          'auth': jwt,
-          'ids': 'ga:' + view_id,
-          'start-date': '30daysAgo',
-          'end-date': 'today',
-          'metrics': 'ga:pageviews'
-        })
-      
-        console.dir(result)
-        return result
-    }
 
     
 
