@@ -10,7 +10,7 @@
 
 ## Description
 
-[Challenge](https://backend-symmetric.herokuapp.com/api)  Symmetric Lab challenge
+[Challenge](https://infusion-investments-backend.herokuapp.com/api/v1)  Infusion Investments challenge
 
 ## Installation
 
@@ -52,7 +52,7 @@ MONGO_ROOT
 
 ## Documentacion
 
-API documentation [Swagger](https://backend-symmetric.herokuapp.com/api).
+API documentation [Swagger](https://infusion-investments-backend.herokuapp.com/api).
 
 ## Autor
 
